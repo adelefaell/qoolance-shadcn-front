@@ -129,7 +129,7 @@ export const Footer: FC = () => {
       {loggedIn && userId ? (
         <>
           <li>
-            <Link to={Links.userProfile(userId)} className="text-gray-700 hover:text-primary transition-colors">
+            <Link to={Links.userProfile()} className="text-gray-700 hover:text-primary transition-colors">
               <span>{footerText.my_profile}</span>
             </Link>
           </li>
@@ -210,7 +210,7 @@ export const Footer: FC = () => {
     <div className="global-footer">
       <hr className="border-t border-gray-200 my-0" />
 
-      <nav className="mobile_footer md:hidden">
+      <nav className="mx-5 md:hidden">
         <div className="footer-collapse-wrapper" id="footerCollapse">
           <div className="footer-collapse-item border-b border-gray-200">
             <h2 className="footer-collapse-header m-0">

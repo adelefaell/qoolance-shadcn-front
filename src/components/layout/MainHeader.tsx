@@ -21,7 +21,7 @@ import { QIcon } from "@/components/ui/q-icon";
 import { cn } from "@/lib/utils";
 
 // Logo from public folder
-const logo = "/vite.svg";
+const logo = "/qoolance-shadcn-front/vite.svg";
 
 // Static text content
 const headerText = {
@@ -242,7 +242,7 @@ export const MainHeader: FC<MainHeaderProps> = (props) => {
                         )}
                       </Dropdown.Item>
                       <Dropdown.Divider />
-                      <Dropdown.Item href={Links.userProfile(profile.id)}>
+                      <Dropdown.Item href={Links.userProfile()}>
                         {headerText.my_profile}
                       </Dropdown.Item>
                       <Dropdown.Item href={Links.settingsPage()}>
@@ -270,7 +270,7 @@ export const MainHeader: FC<MainHeaderProps> = (props) => {
                   <Link
                     className="mobile-view border-2 border-primary rounded-full flex items-center p-1.5 md:hidden"
                     title="view profile"
-                    to={Links.userProfile(profile.id)}
+                    to={Links.userProfile()}
                   >
                     <Avatar
                       name={profile.name}
